@@ -34,6 +34,8 @@ function NextArrow(props) {
   );
 }
 
+// comment
+
 function HotBids({}: Props) {
   const bidsSliderSettings = {
     dots: false,
