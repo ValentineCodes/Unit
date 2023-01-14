@@ -1,3 +1,0 @@
-// Ugochukwu Valentine
-
-// 23
