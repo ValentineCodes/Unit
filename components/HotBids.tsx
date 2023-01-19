@@ -1,12 +1,7 @@
 import React from "react";
 import Bid from "./cards/Bid";
 import Slider from "react-slick";
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/24/solid";
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -33,9 +28,6 @@ function NextArrow(props) {
     />
   );
 }
-
-// comment 1
-// comment 2
 
 function HotBids({}: Props) {
   const bidsSliderSettings = {
