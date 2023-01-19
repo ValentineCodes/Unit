@@ -5,9 +5,10 @@ type Props = {};
 
 const TopCollections = (props: Props) => {
   return (
-    <div className="flex flex-col items-center mt-20 space-y-5">
+    <div className="flex flex-col items-center mt-20 space-y-7 py-10 bg-[#D1EEFC]/10">
       <h1 className="text-center font-bold text-2xl my-5 max-w-[70%]">
-        Top collections over <span className="text-[#D262D1]">last 7 days</span>
+        <span className="mr-1">{"\u26A1"}</span>Top collections over{" "}
+        <span className="text-[#D262D1]">last 7 days</span>
       </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">

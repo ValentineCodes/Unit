@@ -34,31 +34,31 @@ function Header({}: Props) {
             <div className="hidden sm:flex items-center space-x-20">
               <nav>
                 <ul className="flex items-center space-x-5 font-semibold">
-                  <li className="hover:text-[red] cursor-pointer transition-colors duration-300">
+                  <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300">
                     Explore
                   </li>
-                  <li className="hover:text-[red] cursor-pointer transition-colors duration-300">
+                  <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300">
                     Stats
                   </li>
-                  <li className="hover:text-[red] cursor-pointer transition-colors duration-300">
+                  <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300">
                     Resources
                   </li>
-                  <li className="hover:text-[red] cursor-pointer transition-colors duration-300">
+                  <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300">
                     Create
                   </li>
                 </ul>
               </nav>
 
               <div className="hidden sm:flex items-center space-x-3">
-                <div className="bg-[red] rounded-full p-2">
+                <div className="bg-[#D262D1] rounded-full p-2">
                   <WalletIcon className="w-5 h-5" color="white" />
                 </div>
 
-                <div className="bg-[red] rounded-full p-2">
+                <div className="bg-[#D262D1] rounded-full p-2">
                   <UserIcon className="w-5 h-5" color="white" />
                 </div>
 
-                <div className="bg-[red] rounded-full p-2">
+                <div className="bg-[#D262D1] rounded-full p-2">
                   <MoonIcon className="w-5 h-5" color="white" />
                 </div>
               </div>
@@ -82,31 +82,31 @@ function Header({}: Props) {
           <Popover.Panel className="absolute top-20 inset-x-0 space-y-5 origin-top-right transform p-5 transition md:hidden bg-white py-5 ">
             <nav>
               <ul>
-                <li className="hover:text-[red] cursor-pointer transition-colors duration-300 text-bold py-5">
+                <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-bold py-5">
                   Explore
                 </li>
-                <li className="hover:text-[red] cursor-pointer transition-colors duration-300 text-bold py-5">
+                <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-bold py-5">
                   Stats
                 </li>
-                <li className="hover:text-[red] cursor-pointer transition-colors duration-300 text-bold py-5">
+                <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-bold py-5">
                   Resources
                 </li>
-                <li className="hover:text-[red] cursor-pointer transition-colors duration-300 text-bold py-5">
+                <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-bold py-5">
                   Create
                 </li>
               </ul>
             </nav>
 
             <div className="flex items-center space-x-5">
-              <div className="bg-[red] rounded-full p-2">
+              <div className="bg-[#D262D1] rounded-full p-2">
                 <WalletIcon className="w-5 h-5" color="white" />
               </div>
 
-              <div className="bg-[red] rounded-full p-2">
+              <div className="bg-[#D262D1] rounded-full p-2">
                 <UserIcon className="w-5 h-5" color="white" />
               </div>
 
-              <div className="bg-[red] rounded-full p-2">
+              <div className="bg-[#D262D1] rounded-full p-2">
                 <MoonIcon className="w-5 h-5" color="white" />
               </div>
             </div>

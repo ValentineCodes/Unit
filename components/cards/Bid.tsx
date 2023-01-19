@@ -6,7 +6,7 @@ type Props = {};
 
 function Bid({}: Props) {
   return (
-    <div className="border rounded-2xl p-3 space-y-2 text-sm shadow-2xl w-[200px] bg-white">
+    <div className="border rounded-2xl p-3 space-y-2 text-sm shadow-2xl w-[220px] bg-white">
       <Image
         src="/images/nft_1.webp"
         alt=""
@@ -19,8 +19,10 @@ function Bid({}: Props) {
         <strong>ValentineCodes</strong>
 
         <div className="flex justify-between items-center border border-gray-200 rounded-md p-1 space-x-1">
-          <HeartIcon className="w-3 h-3 " />
-          <strong className="text-[#5c5]">155 ETH</strong>
+          <HeartIcon className="w-2 h-2 sm:w-3 sm:h-3" />
+          <strong className="text-[#5c5] text-[10px] sm:text-sm">
+            155 ETH
+          </strong>
         </div>
       </div>
 

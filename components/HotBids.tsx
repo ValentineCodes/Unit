@@ -1,7 +1,7 @@
 import React from "react";
 import Bid from "./cards/Bid";
 import Slider from "react-slick";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -9,11 +9,10 @@ function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
       onClick={onClick}
+      className="bg-white p-2 inline-block rounded-full absolute top-[50%] -left-4 z-20 shadow-lg"
     >
-      <ChevronRightIcon />
+      <ChevronLeftIcon className="w-5 h-5" />
     </div>
   );
 }
@@ -22,10 +21,11 @@ function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
       onClick={onClick}
-    />
+      className="bg-white shadow-lg p-2 inline-block rounded-full absolute top-[50%] -right-4 z-20"
+    >
+      <ChevronRightIcon className="w-5 h-5" />
+    </div>
   );
 }
 
@@ -73,8 +73,11 @@ function HotBids({}: Props) {
   };
 
   return (
-    <div className="w-[70%] mx-auto">
-      <h1 className="text-center font-bold text-2xl my-5">HotBids</h1>
+    <div className="w-[70%] mx-auto space-y-7">
+      <h1 className="text-center font-bold text-2xl">
+        <span className="mr-1">{"\uD83D\uDD25"}</span>
+        HotBids
+      </h1>
       <Slider {...bidsSliderSettings}>
         {[1, 2, 3, 4, 5].map((item) => (
           <Bid key={item} />

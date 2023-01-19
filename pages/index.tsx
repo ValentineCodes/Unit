@@ -14,10 +14,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
-        <Hero />
-        <HotBids />
-        <TopCollections />
+        <section>
+          <Header />
+        </section>
+
+        <section>
+          <Hero />
+        </section>
+
+        <section>
+          <HotBids />
+        </section>
+
+        <section id="top_collections" className="home-section">
+          <TopCollections />
+        </section>
       </main>
     </>
   );

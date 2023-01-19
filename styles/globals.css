@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .slick-slide > div {
-  @apply my-0 mx-10;
+  @apply my-0 mx-10 bg-white;
 }
 .btn-primary {
-  @apply bg-[red] text-white hover:bg-white hover:text-[red] transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl;
+  @apply bg-[#D262D1] text-white hover:bg-white hover:text-[#D262D1] transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl;
 }
 .btn-secondary {
-  @apply bg-white text-[red] hover:bg-[red] hover:text-white transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl;
+  @apply bg-white text-[#D262D1] hover:bg-[#D262D1] hover:text-white transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl;
 }
