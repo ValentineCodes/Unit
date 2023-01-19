@@ -16,12 +16,8 @@ function Hero({}: Props) {
         </p>
 
         <div className="space-x-3">
-          <button className="bg-[red] text-white hover:bg-white hover:text-[red] transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl">
-            Upload
-          </button>
-          <button className="bg-white text-[red] hover:bg-[red] hover:text-white transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl">
-            Explore
-          </button>
+          <button className="btn-primary">Upload</button>
+          <button className="btn-secondary">Explore</button>
         </div>
       </div>
 
