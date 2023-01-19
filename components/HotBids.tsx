@@ -10,9 +10,9 @@ function PrevArrow(props) {
   return (
     <div
       onClick={onClick}
-      className="bg-white p-2 inline-block rounded-full absolute top-[50%] -left-4 z-20 shadow-lg"
+      className="bg-white inline-block rounded-full absolute top-[50%] -left-[10px] z-20 shadow-lg p-[10px]"
     >
-      <ChevronLeftIcon className="w-5 h-5" />
+      <ChevronLeftIcon className="w-[20px] h-[20px]" />
     </div>
   );
 }
@@ -22,9 +22,9 @@ function NextArrow(props) {
   return (
     <div
       onClick={onClick}
-      className="bg-white shadow-lg p-2 inline-block rounded-full absolute top-[50%] -right-4 z-20"
+      className="bg-white inline-block rounded-full absolute top-[50%] -right-[10px] z-20 shadow-lg p-[10px]"
     >
-      <ChevronRightIcon className="w-5 h-5" />
+      <ChevronRightIcon className="w-[20px] h-[20px]" />
     </div>
   );
 }
