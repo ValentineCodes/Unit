@@ -70,7 +70,7 @@ function HotBids({}: Props) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           dots: false,
           arrows: false,
           vertical: false,
@@ -82,6 +82,7 @@ function HotBids({}: Props) {
 
   return (
     <div className="w-[70%] mx-auto">
+      <h1 className="text-center font-bold text-2xl my-5">HotBids</h1>
       <Slider {...bidsSliderSettings}>
         {[1, 2, 3, 4, 5].map((item) => (
           <Bid key={item} />

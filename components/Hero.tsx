@@ -5,8 +5,8 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <div className="flex items-center justify-between max-w-5xl mx-auto shrink-0 py-10">
-      <div className="space-y-5 max-w-[40%]">
+    <div className="flex items-center justify-between max-w-5xl mx-auto shrink-0 py-10 px-5">
+      <div className="space-y-5 sm:max-w-[40%]">
         <h1 className="font-bold text-5xl leading-[3.5rem]">
           Buy, sell and collect NFTs
         </h1>
@@ -16,10 +16,10 @@ function Hero({}: Props) {
         </p>
 
         <div className="space-x-3">
-          <button className="bg-[red] text-white text-[12px] px-6 py-2 rounded-[20px] shadow-xl">
+          <button className="bg-[red] text-white hover:bg-white hover:text-[red] transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl">
             Upload
           </button>
-          <button className="bg-white text-[red] text-[12px] px-6 py-2 rounded-[20px] shadow-xl">
+          <button className="bg-white text-[red] hover:bg-[red] hover:text-white transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl">
             Explore
           </button>
         </div>
@@ -30,7 +30,7 @@ function Hero({}: Props) {
         alt=""
         width={400}
         height={400}
-        className="rounded-2xl"
+        className="rounded-2xl hidden sm:flex"
       />
     </div>
   );
