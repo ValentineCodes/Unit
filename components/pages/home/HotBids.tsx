@@ -1,5 +1,5 @@
 import React from "react";
-import Bid from "./cards/Bid";
+import Bid from "../../cards/Bid";
 import Slider from "react-slick";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NFTCollection from "./cards/NFTCollection";
+import NFTCollection from "../../cards/NFTCollection";
 import { Menu } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
@@ -37,7 +37,7 @@ const TopCollections = (props: Props) => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((_) => (
-          <NFTCollection />
+          <NFTCollection key={_} />
         ))}
       </div>
 
