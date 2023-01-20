@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HotBids from "../components/HotBids";
 import TopCollections from "../components/TopCollections";
+import TrendingCategories from "../components/TrendingCategories";
 
 export default function Home() {
   return (
@@ -28,6 +29,10 @@ export default function Home() {
 
         <section id="top_collections" className="home-section">
           <TopCollections />
+        </section>
+
+        <section>
+          <TrendingCategories />
         </section>
       </main>
     </>
