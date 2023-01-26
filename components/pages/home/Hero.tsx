@@ -16,17 +16,15 @@ function Hero({}: Props) {
         </p>
 
         <div className="space-x-3">
-          <button className="btn-primary">Upload</button>
-          <button className="btn-secondary">Explore</button>
+          <button className="btn btn-primary">Upload</button>
+          <button className="btn btn-secondary">Explore</button>
         </div>
       </div>
 
-      <Image
+      <img
         src="/images/nft_1.webp"
         alt=""
-        width={400}
-        height={400}
-        className="rounded-2xl hidden sm:flex"
+        className="rounded-2xl hidden sm:flex w-5/12"
       />
     </div>
   );

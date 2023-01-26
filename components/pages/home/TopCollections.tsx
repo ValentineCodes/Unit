@@ -41,7 +41,7 @@ const TopCollections = (props: Props) => {
         ))}
       </div>
 
-      <button className="btn-primary">Go To Rankings</button>
+      <button className="btn btn-primary">Go To Rankings</button>
     </div>
   );
 };

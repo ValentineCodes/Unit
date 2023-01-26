@@ -1,5 +1,9 @@
-// Ugochukwu Valentine
+import React from "react";
 
-// 23
+type Props = {};
 
-// Black
+function Playground({}: Props) {
+  return <div>Playground</div>;
+}
+
+export default Playground;

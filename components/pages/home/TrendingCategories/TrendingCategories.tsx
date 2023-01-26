@@ -1,5 +1,6 @@
 import React from "react";
 import CategoryMenu from "./CategoryMenu";
+import NFT from "./modules/NFT";
 
 type Props = {};
 
@@ -11,8 +12,16 @@ function TrendingCategories({}: Props) {
       </h1>
 
       <CategoryMenu
-        onSelectCategory={(category: string) => console.log(category)}
+        onSelectCategory={(category: string) => {
+          console.log(category);
+        }}
       />
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((_) => (
+          <NFT key={_} />
+        ))}
+      </div>
     </div>
   );
 }
