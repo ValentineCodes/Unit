@@ -14,3 +14,15 @@
 .btn-secondary {
   @apply bg-white text-[#D262D1] transition-colors duration-500 text-[12px] px-6 py-2 rounded-[20px] shadow-xl;
 }
+
+/* Typography */
+
+h1 {
+  @apply font-bold text-[1rem];
+}
+
+/* Alignments */
+
+.row-layout {
+  @apply flex flex-row items-center justify-between;
+}

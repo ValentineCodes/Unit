@@ -19,7 +19,7 @@ export default function Home() {
           <Header />
         </section>
 
-        <section>
+        {/* <section>
           <Hero />
         </section>
 
@@ -33,7 +33,7 @@ export default function Home() {
 
         <section>
           <TrendingCategories />
-        </section>
+        </section> */}
       </main>
     </>
   );
