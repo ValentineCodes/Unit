@@ -6,7 +6,7 @@ type Props = {};
 
 function Bid({}: Props) {
   return (
-    <div className="border rounded-2xl p-3 text-sm shadow-2xl w-[15em] bg-white">
+    <div className="border rounded-2xl p-3 text-sm w-[15em] bg-white">
       <Image
         src="/images/nft_1.webp"
         alt=""

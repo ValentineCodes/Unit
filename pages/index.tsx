@@ -33,9 +33,9 @@ export default function Home() {
         <TopCollections />
       </section>
 
-      {/* <section>
+      <section>
         <TrendingCategories />
-      </section> */}
+      </section>
     </>
   );
 }

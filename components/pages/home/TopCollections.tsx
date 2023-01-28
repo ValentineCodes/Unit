@@ -12,8 +12,9 @@ const TopCollections = (props: Props) => {
   return (
     <div className="flex flex-col items-center py-16 px-6 sm:px-12 max-w-[992px] mx-auto">
       <h1 className="text-center font-bold text-2xl max-w-[70%] mb-8">
-        <span className="mr-1">{"\u26A1"}</span>Top collections over{" "}
-        <Menu as="div" className="inline-block">
+        <span className="mr-1">{"\u26A1"}</span>
+        &nbsp;Top&nbsp;collections&nbsp;over&nbsp;
+        <Menu as="span" className="inline-block">
           <Menu.Button className="text-[#D262D1]">
             {selectedTimestamp}{" "}
             <ChevronDownIcon className="w-5 h-5 inline-block" />

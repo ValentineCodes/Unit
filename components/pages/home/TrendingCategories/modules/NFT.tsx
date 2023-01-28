@@ -12,8 +12,8 @@ type Props = {};
 
 function NFT({}: Props) {
   return (
-    <div className="border border-[red] rounded-2xl p-3 space-y-2 bg-white z-10 w-full">
-      {/* <div className="relative">
+    <div className="border rounded-2xl p-3 text-sm w-[15em] bg-white">
+      <div className="relative">
         <Image
           src="/images/nft_1.webp"
           alt=""
@@ -24,7 +24,7 @@ function NFT({}: Props) {
 
         <div className="absolute flex justify-between items-center border border-gray-200 rounded-md px-1 space-x-1 top-2 right-2 bg-white">
           <HeartIcon className="w-2 h-2 sm:w-3 sm:h-3" />
-          <span className="text-[10px] sm:text-sm">155</span>
+          <span className="text-[0.65rem] text-gray-500">155</span>
         </div>
 
         <div className="absolute -bottom-[10px] left-[12px] rounded-full border-2 border-white z-10">
@@ -47,12 +47,12 @@ function NFT({}: Props) {
         </div>
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mt-3">
         <strong>ValentineCodes</strong>
 
         <Menu as="div">
           <Menu.Button>
-            <EllipsisHorizontalIcon className="w-5 h-5" />
+            <EllipsisHorizontalIcon className="w-5" />
           </Menu.Button>
 
           <Menu.Items
@@ -69,15 +69,15 @@ function NFT({}: Props) {
         </Menu>
       </div>
 
-      <p className="text-[12px] text-gray-500">Current bid 1.3 ETH</p>
+      <p className="text-[0.65rem] text-gray-500">From 5.9 ETH 1/7</p>
 
-      <div className="flex items-center justify-between">
-        <span className="text-[#E763D8]">Buy now</span>
-        <div className="flex justify-between items-center space-x-1 text-[12px] font-semibold text-gray-700">
-          <ClockIcon className="w-3 h-3 " />
+      <div className="flex items-center justify-between mt-5">
+        <strong className="text-[#E763D8] text-xs">Buy now</strong>
+        <div className="flex justify-between items-center space-x-1 font-semibold text-[0.65rem] text-gray-500">
+          <ClockIcon className="w-3" />
           <span>View History</span>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

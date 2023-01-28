@@ -21,27 +21,27 @@ const categories = [
   },
   {
     name: "Music",
-    icon: <MusicalNoteIcon className="w-3 h-3 inline-block mr-1" />,
+    icon: <MusicalNoteIcon className="w-3 mr-1" />,
   },
   {
-    name: "Virtual World",
-    icon: <GlobeAltIcon className="w-3 h-3 inline-block mr-1" />,
+    name: `Virtual${"\u00A0"}World`,
+    icon: <GlobeAltIcon className="w-3 mr-1" />,
   },
   {
     name: "Art",
-    icon: <VscSymbolColor className="w-3 h-3 inline-block mr-1" />,
+    icon: <VscSymbolColor className="w-3 mr-1" />,
   },
   {
     name: "Photography",
-    icon: <AiOutlineCamera className="w-3 h-3 inline-block mr-1" />,
+    icon: <AiOutlineCamera className="w-3 mr-1" />,
   },
   {
     name: "Domain",
-    icon: <IoIosExpand className="w-3 h-3 inline-block mr-1" />,
+    icon: <IoIosExpand className="w-3 mr-1" />,
   },
   {
     name: "Collectibles",
-    icon: <BsJournalBookmark className="w-3 h-3 inline-block mr-1" />,
+    icon: <BsJournalBookmark className="w-3 mr-1" />,
   },
 ];
 
@@ -52,26 +52,26 @@ function CategoryMenu({ onSelectCategory }: Props) {
     setSelectedCategory(category);
   };
   return (
-    <div className="flex justify-between items-center max-sm:w-full px-5">
-      <div id="categories-web" className="space-x-2 hidden sm:flex">
+    <div className="flex justify-between items-center w-full">
+      {/* Categories list */}
+      <div id="categories-web" className="space-x-2 hidden md:flex">
         {categories.map((category) => (
           <span
-            className={`px-4 py-2 border rounded-md text-[10px] ${
+            className={`px-3 py-1 border rounded-md text-[.65rem] transition-colors duration-300 cursor-pointer hover:bg-gray-300 flex items-center ${
               selectedCategory === category.name ? "bg-gray-300" : "bg-white"
-            } transition-colors duration-300 cursor-pointer hover:bg-gray-300`}
+            }`}
             onClick={() => handleCategorySelection(category.name)}
             key={category.name}
           >
-            {category.icon}
-            {category.name}
+            {category.icon}&nbsp;{category.name}
           </span>
         ))}
       </div>
 
-      <Menu id="categories-mobile" as="div" className="flex sm:hidden">
-        <Menu.Button className="border rounded-md bg-white px-4 py-2 text-[10px]">
-          {selectedCategory}{" "}
-          <ChevronDownIcon className="w-3 h-3 inline-block" />
+      {/* Mobile categories dropdown list */}
+      <Menu id="categories-mobile" as="div" className="flex md:hidden">
+        <Menu.Button className="border rounded-md bg-white px-3 py-1 text-[10px]">
+          {selectedCategory} <ChevronDownIcon className="w-3 inline-block" />
         </Menu.Button>
 
         <Menu.Items
@@ -93,8 +93,9 @@ function CategoryMenu({ onSelectCategory }: Props) {
       </Menu>
 
       <Menu as="div" className="sm:ml-20">
-        <Menu.Button className="border rounded-md bg-white px-4 py-2 text-[10px]">
-          Recently Added <ChevronDownIcon className="w-3 h-3 inline-block" />
+        <Menu.Button className="border rounded-md bg-white px-3 py-1 text-[0.65em] flex justify-between items-center w-[15em]">
+          <span>Recently&nbsp;Added</span>
+          <ChevronDownIcon className="w-3 inline-block" />
         </Menu.Button>
 
         <Menu.Items
