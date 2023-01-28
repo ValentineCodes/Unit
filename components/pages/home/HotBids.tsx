@@ -73,7 +73,7 @@ function HotBids({}: Props) {
   };
 
   return (
-    <div className="mx-auto p-12 px-6 sm:px-12 flex flex-col max-w-[992px]">
+    <div className="mx-auto p-4 sm:p-12 flex flex-col max-w-[992px]">
       <h1 className="text-center font-bold text-2xl mb-8 ">
         <span className="mr-1">{"\uD83D\uDD25"}</span>
         HotBids

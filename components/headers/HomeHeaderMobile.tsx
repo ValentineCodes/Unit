@@ -12,7 +12,7 @@ function HomeHeaderMobile({}: Props) {
   };
 
   return (
-    <header className="sm:hidden px-6 py-4">
+    <header className="sm:hidden p-4">
       <div className="row-layout">
         <h1 className="text-2xl">Unit</h1>
 

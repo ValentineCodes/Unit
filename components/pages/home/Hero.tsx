@@ -5,9 +5,9 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <div className="flex items-center justify-between shrink-0 py-12 px-6 sm:px-12 max-w-[992px] mx-auto">
+    <div className="flex items-center justify-between shrink-0 p-4 sm:p-12 max-w-[992px] mx-auto">
       <div>
-        <h1 className="font-bold text-5xl leading-[3.5rem]">
+        <h1 className="font-bold text-4xl sm:text-5xl leading-[3.5rem]">
           Buy, sell and <br /> collect NFTs
         </h1>
         <p className="text-gray-500 mt-[1rem] max-w-[70%]">
