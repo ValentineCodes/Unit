@@ -25,11 +25,12 @@ export default function Home() {
         </section>
       </div>
 
+      <section>
+        <HotBids />
+      </section>
+
       {/* 
 
-        <section>
-          <HotBids />
-        </section>
 
         <section id="top_collections" className="home-section">
           <TopCollections />

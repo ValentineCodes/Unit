@@ -42,16 +42,6 @@ function HotBids({}: Props) {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
-          dots: false,
-          arrows: false,
-          vertical: false,
-          infinite: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
           slidesToShow: 3,
           dots: false,
           arrows: false,
@@ -60,7 +50,17 @@ function HotBids({}: Props) {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+          arrows: false,
+          vertical: false,
+          infinite: false,
+        },
+      },
+      {
+        breakpoint: 540,
         settings: {
           slidesToShow: 1,
           dots: false,
@@ -73,8 +73,8 @@ function HotBids({}: Props) {
   };
 
   return (
-    <div className="w-[70%] mx-auto space-y-7">
-      <h1 className="text-center font-bold text-2xl">
+    <div className="mx-auto p-12 px-6 sm:px-12 flex flex-col max-w-[992px]">
+      <h1 className="text-center font-bold text-2xl mb-8 ">
         <span className="mr-1">{"\uD83D\uDD25"}</span>
         HotBids
       </h1>
