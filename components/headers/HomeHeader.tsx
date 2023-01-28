@@ -29,7 +29,7 @@ function HomeHeader({}: Props) {
 
           {/* Search bar */}
           <div
-            className="hidden min-[992px]:flex flex-row items-center px-3 py-2 w-[50%] rounded-xl bg-gray-300 mr-10"
+            className="hidden min-[992px]:flex flex-row items-center px-3 py-2 w-[50%] rounded-xl bg-gray-300 mr-[7rem]"
             onClick={focusSearchbar1}
           >
             <MagnifyingGlassIcon className="w-4 mr-3" />

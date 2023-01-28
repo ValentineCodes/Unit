@@ -1,20 +1,37 @@
-import React from "react";
-import {
-  UserIcon,
-  MagnifyingGlassIcon,
-  WalletIcon,
-  MoonIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
-import { Menu } from "@headlessui/react";
+import React, { useRef } from "react";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import MobileHeaderMenu from "./modules/MobileHeaderMenu";
 
 type Props = {};
 
 function HomeHeaderMobile({}: Props) {
+  const searchbarRef = useRef(null);
+
+  const focusSearchbar = () => {
+    searchbarRef.current?.focus();
+  };
+
   return (
-    <header className="flex items-center px-12 py-4">
-      <div>
+    <header className="sm:hidden px-12 py-4">
+      <div className="row-layout">
+        <h1 className="text-2xl">Unit</h1>
+
+        <MobileHeaderMenu />
+      </div>
+      {/* Search bar */}
+      <div
+        className="hidden max-[992px]:flex flex-row items-center px-3 py-2 my-4 w-[100%] rounded-xl bg-gray-300"
+        onClick={focusSearchbar}
+      >
+        <MagnifyingGlassIcon className="w-4 mr-3" />
+
+        <input
+          ref={searchbarRef}
+          placeholder="Search"
+          className="outline-none border-none text-xs bg-transparent placeholder-gray-500"
+        />
+      </div>
+      {/* <div>
         <Menu as="nav" className="flex sm:hidden">
           {({ open }) => (
             <>
@@ -70,22 +87,22 @@ function HomeHeaderMobile({}: Props) {
               </Menu.Items>
             </>
           )}
-        </Menu>
+        </Menu> */}
 
-        {/* <Popover.Button className="flex sm:hidden">
+      {/* <Popover.Button className="flex sm:hidden">
               {open ? (
                 <XMarkIcon className="w-7 h-7" color="black" />
               ) : (
                 <Bars3Icon className="w-7 h-7" color="black" />
               )}
             </Popover.Button> */}
-      </div>
+      {/* </div>
 
       <div className="flex sm:hidden items-center space-x-5 border rounded-[10px] p-1 pl-2 w-[90%]">
         <MagnifyingGlassIcon className="w-4 h-4" />
 
         <input placeholder="Search" className="outline-none border-none" />
-      </div>
+      </div> */}
     </header>
   );
 }
