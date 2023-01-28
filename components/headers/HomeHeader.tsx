@@ -46,16 +46,16 @@ function HomeHeader({}: Props) {
           {/* Nav bar */}
           <nav className="mr-14">
             <ul className="flex items-center space-x-10 font-semibold">
-              <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-xs">
+              <li className="hover:text-[#8258FC] cursor-pointer transition-colors duration-300 text-xs">
                 Explore
               </li>
-              <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-xs">
+              <li className="hover:text-[#8258FC] cursor-pointer transition-colors duration-300 text-xs">
                 Stats
               </li>
-              <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-xs">
+              <li className="hover:text-[#8258FC] cursor-pointer transition-colors duration-300 text-xs">
                 Resources
               </li>
-              <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-xs">
+              <li className="hover:text-[#8258FC] cursor-pointer transition-colors duration-300 text-xs">
                 Create
               </li>
             </ul>
@@ -63,15 +63,15 @@ function HomeHeader({}: Props) {
 
           <div className="flex items-center space-x-2">
             {/* Actions */}
-            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition duration-300 group">
+            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#8258FC] hover:bg-[#8258FC] transition duration-300 group">
               <WalletIcon className="w-3 group-hover:text-white" />
             </div>
 
-            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition duration-300 group">
+            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#8258FC] hover:bg-[#8258FC] transition duration-300 group">
               <UserIcon className="w-3 group-hover:text-white" />
             </div>
 
-            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition duration-300 group">
+            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#8258FC] hover:bg-[#8258FC] transition duration-300 group">
               <MoonIcon className="w-3 group-hover:text-white" />
             </div>
           </div>

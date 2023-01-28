@@ -29,25 +29,25 @@ function MobileHeaderMenu({}: Props) {
           >
             <Menu.Item
               as="li"
-              className="hover:bg-[#D262D1] hover:text-white transition-colors duration-500 p-5 w-full"
+              className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 p-5 w-full"
             >
               Explore
             </Menu.Item>
             <Menu.Item
               as="li"
-              className="hover:bg-[#D262D1] hover:text-white transition-colors duration-500 p-5 w-full"
+              className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 p-5 w-full"
             >
               Stats
             </Menu.Item>
             <Menu.Item
               as="li"
-              className="hover:bg-[#D262D1] hover:text-white transition-colors duration-500 p-5 w-full"
+              className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 p-5 w-full"
             >
               Resources
             </Menu.Item>
             <Menu.Item
               as="li"
-              className="hover:bg-[#D262D1] hover:text-white transition-colors duration-500 p-5 w-full"
+              className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 p-5 w-full"
             >
               Create
             </Menu.Item>

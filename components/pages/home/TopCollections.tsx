@@ -15,7 +15,7 @@ const TopCollections = (props: Props) => {
         <span className="mr-1">{"\u26A1"}</span>
         &nbsp;Top&nbsp;collections&nbsp;over&nbsp;
         <Menu as="span" className="inline-block">
-          <Menu.Button className="text-[#D262D1]">
+          <Menu.Button className="text-[#8258FC]">
             {selectedTimestamp}{" "}
             <ChevronDownIcon className="w-5 h-5 inline-block" />
           </Menu.Button>
@@ -26,7 +26,7 @@ const TopCollections = (props: Props) => {
             {timestamps.map((timestamp) => (
               <Menu.Item
                 as="li"
-                className="hover:bg-[#D262D1] hover:text-white transition-colors duration-500 px-5 py-2 w-full"
+                className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 px-5 py-2 w-full"
                 onClick={() => setSelectedTimestamp(timestamp)}
               >
                 {timestamp}

@@ -61,7 +61,7 @@ function NFT({}: Props) {
           >
             <Menu.Item
               as="p"
-              className="hover:bg-[#D262D1] hover:text-white transition-colors duration-500 px-5 py-2 w-full"
+              className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 px-5 py-2 w-full"
             >
               Menu 1
             </Menu.Item>
