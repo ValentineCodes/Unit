@@ -29,16 +29,13 @@ export default function Home() {
         <HotBids />
       </section>
 
-      {/* 
+      <section className="bg-[#D1EEFC]/10">
+        <TopCollections />
+      </section>
 
-
-        <section id="top_collections" className="home-section">
-          <TopCollections />
-        </section>
-
-        <section>
-          <TrendingCategories />
-        </section> */}
+      {/* <section>
+        <TrendingCategories />
+      </section> */}
     </>
   );
 }
