@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/pages/home/Header";
 import Hero from "../components/pages/home/Hero";
 import HotBids from "../components/pages/home/HotBids";
+import Newsletter from "../components/pages/home/Newsletter";
 import TopCollections from "../components/pages/home/TopCollections";
 import TrendingCategories from "../components/pages/home/TrendingCategories";
 
@@ -35,6 +36,10 @@ export default function Home() {
 
       <section>
         <TrendingCategories />
+      </section>
+
+      <section className="bg-[#D1EEFC]/10">
+        <Newsletter />
       </section>
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { HeartIcon } from "@heroicons/react/24/solid";
+import { HeartIcon } from "@heroicons/react/24/outline";
 
 type Props = {};
 
@@ -20,7 +20,7 @@ function Bid({}: Props) {
 
         <div className="flex justify-between items-center border border-gray-200 rounded-md px-1 space-x-1">
           <HeartIcon className="w-2 sm:w-3 sm:h-3" />
-          <span className="text-[#5c5] text-[10px] sm:text-sm">155 ETH</span>
+          <span className="text-[#5c5] text-xs">155 ETH</span>
         </div>
       </div>
 

@@ -4,7 +4,7 @@ import {
   ChevronDownIcon,
   MusicalNoteIcon,
   GlobeAltIcon,
-} from "@heroicons/react/24/solid";
+} from "@heroicons/react/24/outline";
 import { IoIosExpand } from "react-icons/io";
 import { BsJournalBookmark } from "react-icons/bs";
 import { VscSymbolColor } from "react-icons/vsc";

@@ -4,7 +4,7 @@ import {
   HeartIcon,
   EllipsisHorizontalIcon,
   ClockIcon,
-} from "@heroicons/react/24/solid";
+} from "@heroicons/react/24/outline";
 
 import { Menu } from "@headlessui/react";
 
