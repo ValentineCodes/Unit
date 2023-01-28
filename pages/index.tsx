@@ -14,14 +14,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+
+      <div className="bg-[#D1EEFC]/10">
         <section>
           <Header />
         </section>
 
-        {/* <section>
+        <section>
           <Hero />
         </section>
+      </div>
+
+      {/* 
 
         <section>
           <HotBids />
@@ -34,7 +38,6 @@ export default function Home() {
         <section>
           <TrendingCategories />
         </section> */}
-      </main>
     </>
   );
 }

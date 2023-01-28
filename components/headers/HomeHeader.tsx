@@ -29,7 +29,7 @@ function HomeHeader({}: Props) {
 
           {/* Search bar */}
           <div
-            className="hidden min-[992px]:flex flex-row items-center px-3 py-2 w-[50%] rounded-xl bg-gray-300 mr-[7rem]"
+            className="hidden min-[992px]:flex flex-row items-center px-3 py-2 w-[50%] rounded-xl bg-white border border-gray-100 mr-[7rem]"
             onClick={focusSearchbar1}
           >
             <MagnifyingGlassIcon className="w-4 mr-3" />
@@ -80,7 +80,7 @@ function HomeHeader({}: Props) {
 
       {/* Search bar */}
       <div
-        className="hidden max-[992px]:flex flex-row items-center px-3 py-2 my-4 w-[100%] rounded-xl bg-gray-300"
+        className="hidden max-[992px]:flex flex-row items-center px-3 py-2 my-4 w-[100%] rounded-xl bg-white border border-gray-100 "
         onClick={focusSearchbar2}
       >
         <MagnifyingGlassIcon className="w-4 mr-3" />
