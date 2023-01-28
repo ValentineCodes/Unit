@@ -63,15 +63,15 @@ function HomeHeader({}: Props) {
 
           <div className="flex items-center space-x-2">
             {/* Actions */}
-            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-300 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition-shadow duration-300 group">
+            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition duration-300 group">
               <WalletIcon className="w-3 group-hover:text-white" />
             </div>
 
-            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-300 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition-shadow duration-300 group">
+            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition duration-300 group">
               <UserIcon className="w-3 group-hover:text-white" />
             </div>
 
-            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-300 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition-shadow duration-300 group">
+            <div className="bg-white shadow-lg rounded-full p-2 border border-gray-100 cursor-pointer hover:shadow-[#D262D1] hover:bg-[#d262d1] transition duration-300 group">
               <MoonIcon className="w-3 group-hover:text-white" />
             </div>
           </div>
