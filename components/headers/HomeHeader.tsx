@@ -29,7 +29,7 @@ function HomeHeader({}: Props) {
 
           {/* Search bar */}
           <div
-            className="hidden min-[992px]:flex flex-row items-center px-3 py-2 w-[70%] rounded-xl bg-gray-300"
+            className="hidden min-[992px]:flex flex-row items-center px-3 py-2 w-[50%] rounded-xl bg-gray-300 mr-10"
             onClick={focusSearchbar1}
           >
             <MagnifyingGlassIcon className="w-4 mr-3" />
@@ -45,7 +45,7 @@ function HomeHeader({}: Props) {
         <div className="flex justify-end items-center w-[50%]">
           {/* Nav bar */}
           <nav className="mr-14">
-            <ul className="flex items-center space-x-5 font-semibold">
+            <ul className="flex items-center space-x-10 font-semibold">
               <li className="hover:text-[#D262D1] cursor-pointer transition-colors duration-300 text-xs">
                 Explore
               </li>
