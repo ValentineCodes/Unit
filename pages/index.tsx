@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/pages/home/Footer";
 import Header from "../components/pages/home/Header";
 import Hero from "../components/pages/home/Hero";
 import HotBids from "../components/pages/home/HotBids";
@@ -40,6 +41,10 @@ export default function Home() {
 
       <section className="bg-[#D1EEFC]/10">
         <Newsletter />
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </>
   );

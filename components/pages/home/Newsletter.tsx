@@ -15,7 +15,7 @@ const sale_procedure = [
     description:
       "Once you've set up your wallet, connect it by clicking the NFTMarketplace in the top right corner.",
     icon: <WalletIcon className="w-4 text-white" />,
-    icon_color: "#8357FC",
+    icon_color_style: "bg-[#8357FC] outline-[#8357FC]/40",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const sale_procedure = [
     description:
       "Click create and set up your collection. Add social links, a description, profile & banner images, and set up a secondary sales fee.",
     icon: <HeartIcon className="w-4 text-white" />,
-    icon_color: "#5CBA84",
+    icon_color_style: "bg-[#5CBA84] outline-[#5CBA84]/40",
   },
 
   {
@@ -32,7 +32,7 @@ const sale_procedure = [
     description:
       "Upload your work(image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties.",
     icon: <PhotoIcon className="w-4 text-white" />,
-    icon_color: "#428AF8",
+    icon_color_style: "bg-[#428AF8] outline-[#428AF8]/40",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const sale_procedure = [
     description:
       "Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to sell your NFTs.",
     icon: <TagIcon className="w-4 text-white" />,
-    icon_color: "#E94243",
+    icon_color_style: "bg-[#E94243] outline-[#E94243]/40",
   },
 ];
 
@@ -58,7 +58,7 @@ function Newsletter({}: Props) {
             className="flex flex-col items-center w-[15em] mt-4"
           >
             <div
-              className={`bg-[${item.icon_color}] p-3 outline outline-8 outline-[${item.icon_color}]/40 rounded-full`}
+              className={`p-3 outline outline-8 rounded-full ${item.icon_color_style} `}
             >
               {item.icon}
             </div>
