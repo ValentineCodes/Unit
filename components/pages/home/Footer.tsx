@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-// import {SocialIcon} from "react-social-icons"
+import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
+import { FaLinkedinIn, FaTiktok } from "react-icons/fa";
 
 type Props = {};
 
@@ -17,26 +18,19 @@ function Footer({}: Props) {
             Powered by blockchain technology.
           </p>
 
-          {/* <div>
-          <SocialIcon
-          url="https://www.linkedin.com/in/valentineorga"
-          fgColor="gray"
-          bgColor="transparent"
-          target="_blank"
-        />
-        <SocialIcon
-          url="https://www.facebook.com/orga.valentine.77"
-          fgColor="gray"
-          bgColor="transparent"
-          target="_blank"
-        />
-        <SocialIcon
-          url="https://github.com/ValentineCodes"
-          fgColor="gray"
-          bgColor="transparent"
-          target="_blank"
-        />
-          </div> */}
+          <div className="flex items-center space-x-7 mt-10 text-xl text-gray-400">
+            <Link href="https://www.facebook.com/orga.valentine.77">
+              <BsFacebook />
+            </Link>
+
+            <BsTwitter />
+
+            <Link href="https://www.linkedin.com/in/valentineorga">
+              <FaLinkedinIn />
+            </Link>
+            <BsInstagram />
+            <FaTiktok />
+          </div>
         </div>
 
         <div className="sm:flex justify-between items-start sm:w-[50%]">
