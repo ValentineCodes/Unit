@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .slick-slide > div {
-  @apply my-0 mx-10 bg-white;
+  @apply grid place-items-center m-auto p-0;
 }
 .btn {
   @apply hover:text-[white] hover:bg-black;

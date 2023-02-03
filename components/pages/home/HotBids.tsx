@@ -10,9 +10,9 @@ function PrevArrow(props) {
   return (
     <div
       onClick={onClick}
-      className="bg-white inline-block rounded-full absolute top-[50%] -left-[10px] z-20 shadow-lg p-[10px]"
+      className="bg-white inline-block rounded-full absolute top-[45%] left-[-.8em] z-20 shadow-lg p-[10px]"
     >
-      <ChevronLeftIcon className="w-[20px] h-[20px]" />
+      <ChevronLeftIcon className="w-5" />
     </div>
   );
 }
@@ -22,9 +22,9 @@ function NextArrow(props) {
   return (
     <div
       onClick={onClick}
-      className="bg-white inline-block rounded-full absolute top-[50%] -right-[10px] z-20 shadow-lg p-[10px]"
+      className="bg-white inline-block rounded-full absolute top-[45%] right-[-.8em] z-20 shadow-lg p-[10px]"
     >
-      <ChevronRightIcon className="w-[20px] h-[20px]" />
+      <ChevronRightIcon className="w-5" />
     </div>
   );
 }
@@ -78,6 +78,7 @@ function HotBids({}: Props) {
         <span className="mr-1">{"\uD83D\uDD25"}</span>
         HotBids
       </h1>
+
       <Slider {...bidsSliderSettings}>
         {[1, 2, 3, 4, 5].map((item) => (
           <Bid key={item} />
