@@ -100,7 +100,7 @@ function Footer({}: Props) {
       </div>
 
       <div className="sm:flex justify-between items-center w-full text-gray-500 text-xs mt-10 sm:mt-20 space-y-10 sm:space-y-0">
-        <p>2022 Unit - Made by Valentine Orga</p>
+        <p>{`\u00A9`}2022 Unit - Made by Valentine Orga</p>
         <p>Terms and conditions Privacy Policy</p>
       </div>
     </div>

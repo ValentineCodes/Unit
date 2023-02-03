@@ -30,9 +30,10 @@ function NextArrow(props) {
 }
 
 function HotBids({}: Props) {
-  const bidsSliderSettings = {
+  const sliderItems = [1, 2, 3, 4, 5];
+  const sliderConfig = {
     dots: false,
-    infinite: true,
+    infinite: sliderItems.length > 3,
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -79,8 +80,8 @@ function HotBids({}: Props) {
         HotBids
       </h1>
 
-      <Slider {...bidsSliderSettings}>
-        {[1, 2, 3, 4, 5].map((item) => (
+      <Slider {...sliderConfig}>
+        {sliderItems.map((item) => (
           <Bid key={item} />
         ))}
       </Slider>
