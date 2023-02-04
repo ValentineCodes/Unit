@@ -68,6 +68,16 @@ const TopCollections = (props: Props) => {
           infinite: false,
         },
       },
+      {
+        breakpoint: 435,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+          arrows: false,
+          vertical: false,
+          infinite: false,
+        },
+      },
     ],
   };
 
