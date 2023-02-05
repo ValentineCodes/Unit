@@ -1,4 +1,5 @@
 import Head from "next/head";
+import PageLayout from "../components/layouts/PageLayout";
 import Footer from "../components/pages/home/Footer";
 import Header from "../components/pages/home/Header";
 import Hero from "../components/pages/home/Hero";
@@ -9,43 +10,20 @@ import TrendingCategories from "../components/pages/home/TrendingCategories";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Unit - The NFT Market</title>
-        <meta name="description" content="Buy, sell and collect NFTs" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <PageLayout title="The NFT Market">
+      <Hero />
 
-      <div className="bg-[#D1EEFC]/10">
-        <section>
-          <Header />
-        </section>
-
-        <section>
-          <Hero />
-        </section>
-      </div>
-
-      <section>
-        <HotBids />
-      </section>
+      <HotBids />
 
       <section className="bg-[#D1EEFC]/10">
         <TopCollections />
       </section>
 
-      <section>
-        <TrendingCategories />
-      </section>
+      <TrendingCategories />
 
       <section className="bg-[#D1EEFC]/10">
         <Newsletter />
       </section>
-
-      <section>
-        <Footer />
-      </section>
-    </>
+    </PageLayout>
   );
 }

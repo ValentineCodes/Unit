@@ -20,7 +20,7 @@ function HomeHeaderMobile({}: Props) {
       </div>
       {/* Search bar */}
       <div
-        className="hidden max-[992px]:flex flex-row items-center px-3 py-2 my-4 w-[100%] rounded-xl bg-white border border-gray-100"
+        className="hidden max-[992px]:flex flex-row items-center px-3 py-2 my-4 w-[100%] rounded-xl bg-white border border-gray-200"
         onClick={focusSearchbar}
       >
         <MagnifyingGlassIcon className="w-4 mr-3" />
