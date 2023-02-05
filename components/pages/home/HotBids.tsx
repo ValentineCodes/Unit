@@ -83,8 +83,8 @@ function HotBids({}: Props) {
 
       <Slider {...sliderConfig}>
         {sliderItems.map((item) => (
-          <Link href="/nft">
-            <Bid key={item} />
+          <Link key={item} href="/nft">
+            <Bid />
           </Link>
         ))}
       </Slider>

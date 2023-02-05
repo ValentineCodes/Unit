@@ -10,7 +10,7 @@ export default ({ title, children }: Props) => {
   return (
     <>
       <Head>
-        <title>Unit - {title}</title>
+        <title>{title}</title>
         <meta name="description" content="Buy, sell and collect NFTs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
