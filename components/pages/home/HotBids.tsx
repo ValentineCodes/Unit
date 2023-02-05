@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Bid from "../../cards/Bid";
 import Slider from "react-slick";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
@@ -82,7 +83,9 @@ function HotBids({}: Props) {
 
       <Slider {...sliderConfig}>
         {sliderItems.map((item) => (
-          <Bid key={item} />
+          <Link href="/nft">
+            <Bid key={item} />
+          </Link>
         ))}
       </Slider>
     </div>
