@@ -3,8 +3,44 @@ import CategoryMenu from "./CategoryMenu";
 import NFT from "./modules/NFT";
 import Slider from "react-slick";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
+import { MusicalNoteIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
+import { IoIosExpand } from "react-icons/io";
+import { BsJournalBookmark } from "react-icons/bs";
+import { VscSymbolColor } from "react-icons/vsc";
+import { AiOutlineCamera } from "react-icons/ai";
 
 type Props = {};
+
+const categories = [
+  {
+    name: "All",
+    icon: null,
+  },
+  {
+    name: "Music",
+    icon: <MusicalNoteIcon className="w-3 mr-1" />,
+  },
+  {
+    name: `Virtual${"\u00A0"}World`,
+    icon: <GlobeAltIcon className="w-3 mr-1" />,
+  },
+  {
+    name: "Art",
+    icon: <VscSymbolColor className="w-3 mr-1" />,
+  },
+  {
+    name: "Photography",
+    icon: <AiOutlineCamera className="w-3 mr-1" />,
+  },
+  {
+    name: "Domain",
+    icon: <IoIosExpand className="w-3 mr-1" />,
+  },
+  {
+    name: "Collectibles",
+    icon: <BsJournalBookmark className="w-3 mr-1" />,
+  },
+];
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
@@ -70,6 +106,7 @@ function TrendingCategories({}: Props) {
       </h1>
 
       <CategoryMenu
+        categories={categories}
         onSelectCategory={(category: string) => {
           console.log(category);
         }}
