@@ -21,6 +21,10 @@ h1 {
   @apply font-bold text-[1rem];
 }
 
+.text-link {
+  @apply hover:text-[#D3542D] hover:underline transition-all;
+}
+
 /* Alignments */
 
 .row-layout {

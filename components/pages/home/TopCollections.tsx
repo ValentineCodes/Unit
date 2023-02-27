@@ -98,6 +98,7 @@ const TopCollections = (props: Props) => {
             {timestamps.map((timestamp) => (
               <Menu.Item
                 as="li"
+                key={timestamp}
                 className="hover:bg-[#8258FC] hover:text-white transition-colors duration-500 px-5 py-2 w-full"
                 onClick={() => setSelectedTimestamp(timestamp)}
               >

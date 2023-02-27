@@ -17,7 +17,9 @@ function Hero({}: Props) {
 
         <div className="space-x-3 mt-[2rem]">
           <button className="btn btn-primary w-[6.5rem]">Upload</button>
-          <button className="btn btn-secondary w-[6.5rem]">Explore</button>
+          <a href="/hms">
+            <button className="btn btn-secondary w-[6.5rem]">Explore</button>
+          </a>
         </div>
       </div>
 
