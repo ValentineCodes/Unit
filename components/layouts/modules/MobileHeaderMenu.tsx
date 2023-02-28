@@ -1,11 +1,5 @@
 import React, { Fragment } from "react";
-import {
-  UserIcon,
-  WalletIcon,
-  MoonIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Menu, Transition } from "@headlessui/react";
 
 type Props = {};

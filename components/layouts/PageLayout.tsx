@@ -1,14 +1,17 @@
+import React from "react";
 import Head from "next/head";
-import Footer from "../pages/home/Footer";
-import Header from "../pages/home/Header";
+
+import Footer from "./modules/Footer";
+import Header from "./modules/Header";
 
 interface Props {
   title: string;
   children: any;
 }
+
 export default ({ title, children }: Props) => {
   return (
-    <>
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content="Buy, sell and collect NFTs" />
@@ -23,6 +26,6 @@ export default ({ title, children }: Props) => {
 
         <Footer />
       </main>
-    </>
+    </div>
   );
 };

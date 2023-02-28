@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "./Logo";
+import Logo from "../../shared/Logo";
 import MobileHeaderMenu from "./MobileHeaderMenu";
 
 type Props = {};
@@ -19,12 +19,12 @@ function Header({}: Props) {
                 <Link href="/">Contact Us</Link>
               </li>
               <li className="text-link">
-                <Link href="/">Login</Link>
+                <Link href="/login">Login</Link>
               </li>
               <li>
-                <button className="bg-[#D3542D] text-white hover:bg-white hover:outline outline-1 hover:outline-[#D3542D] hover:text-[#D3542D] transition-colors duration-500 text-[12px] px-6 py-2 rounded-[5px]">
-                  Create an account
-                </button>
+                <Link href="/register">
+                  <button className="btn-primary">Create an account</button>
+                </Link>
               </li>
             </ul>
           </nav>

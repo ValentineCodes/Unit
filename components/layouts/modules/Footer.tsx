@@ -30,12 +30,9 @@ function Footer({}: Props) {
               placeholder="Email address"
               type="email"
               onChange={handleEmail}
-              className="p-2 rounded-md outline-none border-none placeholder-gray text-black"
+              className="p-2 rounded-md outline-none border-none placeholder-gray text-black h-10"
             />
-            <button
-              type="submit"
-              className="bg-[#D3542D] text-md p-2 rounded-md ml-3"
-            >
+            <button type="submit" className="btn-primary ml-2 h-10">
               Subscribe
             </button>
           </form>
